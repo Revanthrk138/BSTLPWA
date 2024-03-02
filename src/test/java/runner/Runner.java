@@ -8,12 +8,14 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 
-@CucumberOptions(glue="steps", features="src/test/resources/features/regression/ValidateLogin.feature"
+@CucumberOptions(glue ="steps", features={"/Users/139srk/eclipse-workspace/BSTLBDDCUCUMBERFRAMWORK/src/test/resources/features/regression/Rewardcart.feature"}
 , dryRun=false,
-  tags="@regression",
   monochrome = true,
-  stepNotifications=true)            
-// glue will attach the all cucumber steps & dry riun only run whoch don't have steps
-public class RegressionRunner {
+  stepNotifications=true
+  ,  plugin = {
+          "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" , "pretty" ,"html:target/report/report.html",
+})            
+// glue will attach the all cucumber steps & dry run only run which don't have steps
+public class Runner {
 
 }

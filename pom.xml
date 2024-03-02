@@ -3,7 +3,15 @@
   <groupId>com.bstl.com</groupId>
   <artifactId>bddframework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  
+  
+  <properties>
+   <allure.version>2.24.0</allure.version>
+</properties>
   <build>
+ 
   <plugins>
   
   <plugin>
@@ -71,6 +79,13 @@
     <version>4.13.2</version>
     <scope>test</scope>
 </dependency>
- 
+ <dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber7-jvm</artifactId>
+    <version>2.25.0</version>
+</dependency>
+
+
+
  </dependencies>
 </project>
