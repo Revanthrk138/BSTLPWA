@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 
-@CucumberOptions(glue ="steps", features={"/Users/139srk/eclipse-workspace/BSTLBDDCUCUMBERFRAMWORK/src/test/resources/features/regression/Rewardcart.feature"}
+@CucumberOptions(glue ="steps", features={"/Users/139srk/eclipse-workspace/BSTLPWA/src/test/resources/features/sanity"}
 , dryRun=false,
   monochrome = true,
   stepNotifications=true

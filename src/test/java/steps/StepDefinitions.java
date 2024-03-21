@@ -79,7 +79,7 @@ public class StepDefinitions {
 
 @When("user click on rewards heading in header section in home page")
 public void user_click_on_rewards_heading_in_header_section_in_home_page() throws InterruptedException {
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	driver.findElement(By.xpath("//span[contains(text(),'Rewards')]")).click();
     
 }
@@ -87,24 +87,26 @@ public void user_click_on_rewards_heading_in_header_section_in_home_page() throw
 @When("user click on e-voucher reward")
 public void user_click_on_e_voucher_reward() throws InterruptedException {
 	Thread.sleep(3000);
-    driver.findElement(By.xpath("//h5[@class='text--name']")).click();
+    driver.findElement(By.xpath("//h5[text( )=' Demo24 ']")).click();
 }
 
 @When("user click on redeem button")
 public void user_click_on_redeem_button() throws InterruptedException {
-	 Thread.sleep(3000);
-    driver.findElement(By.xpath("//h5[text( )=' Demo24 ']")).click();
+	 Thread.sleep(6000);
+    driver.findElement(By.xpath("//div[text()='Redeem']")).click();
    
 }
 
 
 @When("user click on redeem now button")
-public void user_click_on_redeemnow_button() {
+public void user_click_on_redeemnow_button() throws InterruptedException {
+	Thread.sleep(3000);
 	driver.findElement(By.xpath("//div[@class='box--order']")).click();
 }
 
 @When("user click on redeem now button on order confirmation page")
-public void user_click_on_redeemnow_button_on_order_confirmation_page() {
+public void user_click_on_redeemnow_button_on_order_confirmation_page() throws InterruptedException {
+	Thread.sleep(3000);
 	driver.findElement(By.xpath("//div[@class='box--place ng-star-inserted']")).click();
 	
    
@@ -113,7 +115,7 @@ public void user_click_on_redeemnow_button_on_order_confirmation_page() {
 @When("click on view order button")
 public void click_on_view_order_button() throws InterruptedException {
 	driver.findElement(By.xpath("//div[@class='box--view']")).click();
-	 Thread.sleep(3000);
+	 Thread.sleep(6000);
    
 }
 
@@ -180,13 +182,13 @@ public void user_click_on_checkout_button() throws InterruptedException {
 
 @When("user click on place your order button")
 public void user_click_on_place_your_order_button() throws InterruptedException {
-	 Thread.sleep(6000);
+	 Thread.sleep(8000);
     driver.findElement(By.xpath("//span[text()='Place Your Order']")).click();
 }
 
 @When("user click on view your order button")
 public void user_click_on_view_your_order_button() throws InterruptedException {
-	 Thread.sleep(6000);
+	 Thread.sleep(8000);
     driver.findElement(By.xpath("//span[text()='View Order']")).click();
 }
 
